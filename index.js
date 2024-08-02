@@ -12,7 +12,6 @@ $( document ).ready(function() {
 })
 
 $('.doctype-arrow').on('click', function(e){
-    console.log('cl')
     $('select#document-type').click()
 })
 
@@ -28,6 +27,7 @@ function formHandler(){
         checkPaymentOrganization($(this))
     })
     $('.form-application').find ('button').on('click', function(e){
+        $(this).attr('type') !== 'submit' &&
         e.preventDefault()
         handlerTextArea($(this))
     })
