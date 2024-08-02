@@ -96,14 +96,21 @@ label {
 .btn-control {
   border: 2px solid rgba(8, 94, 224, 0.3568627451);
   border-radius: 2px;
+  background-color: #fff;
   font-size: 9px;
   height: 18px;
+  width: 80px;
 }
 .btn-control_clear {
   width: 80px;
 }
 .btn-control_choose {
   width: 108px;
+}
+.btn-control_submite {
+  align-self: flex-end;
+  width: 80px;
+  margin-right: 55px;
 }
 
 .btns-control {
@@ -212,6 +219,11 @@ label {
 }
 .form-field select option {
   width: 200px;
+}
+
+.form-field._account {
+  margin-bottom: 20px;
+  position: relative;
 }
 
 .form-application {
@@ -356,7 +368,7 @@ label {
 }
 .form-application__statement__account {
   width: 733px;
-  height: 174px;
+  height: 204px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -427,7 +439,6 @@ label {
 }
 .form-application__documents__btn-wrapper {
   display: flex;
-  width: 60px;
   position: relative;
   justify-content: center;
   align-items: center;
@@ -513,4 +524,12 @@ label {
   background-repeat: no-repeat;
   background-position: center center;
   pointer-events: none;
-}/*# sourceMappingURL=form.css.map */
+}
+
+.account-number-descr {
+  font-size: 12px;
+  color: #5c5757;
+  position: absolute;
+  top: 25px;
+  left: 300px;
+}
