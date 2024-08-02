@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <title>Form</title>
+</head>
+<body>
+    <form action="#" class="form-application">
+        <div class="form-application__title">Заявление на назначение и выплаты единовременного пособия</div>
+        <div class="form-application__personal">
+            <div class="form-application__personal__title">Сведения о заявителе</div>
+            <div class="form-field form-application__personal__field">
+                    <label for="personal-lastname">Фамилия<span class="req-indicator">*</span></label>
+                    <input class="req" type="text" name="personal-lastname" id="personal-lastname">
+            </div>
+            <div class="form-field form-application__personal__field">
+          
+                    <label for="personal-firstname">Имя<span class="req-indicator">*</span></label>
+                    <input class="req" type="text" name="personal-firstname" id="personal-firstname">
+         
+            </div>
+            <div class="form-field form-application__personal__field">
+              
+                    <label for="personal-middlename">Отчество</label>
+                    <input type="text" name="personal-middlename" id="personal-middlename">
+        
+            </div>
+            <div class="form-field form-application__personal__field">
+         
+                    <label for="personal-status">Статус<span class="req-indicator">*</span></label>
+                    <input  class="req"  type="text" name="personal-status" id="personal-status">
+      
+            </div>
+            <div class="form-field form-application__personal__document">
+                <div class="form-application__personal__document__title">Документ, удостоверяющий личность</div>
+                <div class="form-field form-application__personal__document__field">
+
+                        <label for="document-type">Тип документа<span class="req-indicator">*</span></label>
+                        <select  class="req doctype-field"  name="document-type" id="document-type">
+                            <option selected disabled>(Выберите из списка)</option>
+                            <option value="01">01 - паспорт гражданина Российской Федерации</option>
+                            <option value="02">02 - свидетельство органов ЗАГСа, органа исполнительной  власти  или  органа местного самоуправления о  рождении гражданина</option>
+                            <option value="03">03 - паспорт моряка (удостоверение личности моряка)</option>
+                            <option value="04">04 - удостоверение личности военнослужащего Российской Федерации</option>
+                            <option value="05">05 - военный билет военнослужащего</option>
+                            <option value="06">06 - временное удостоверение личности гражданина Российской Федерации</option>
+                            <option value="07">07 - справка об освобождении из мест лишения свободы</option>
+                            <option value="08">08 - паспорт иностранного гражданина или удостоверение личности лица без гражданства</option>
+                            <option value="09">09 - вид на жительство в Российской Федерации</option>
+                            <option value="10">10 - разрешение на временное проживание 11 - удостоверение беженца</option>
+                            <option value="11">11 - удостоверение беженца</option>
+                            <option value="12">12 - миграционная карта</option>
+                            <option value="13">13 - паспорт гражданина СССР образца 1974г. для некоторых категорий иностранных граждан и лиц без гражданства</option>
+                        </select>
+                        <span class="doctype-arrow"></span>
+    
+                </div>
+                <div class="form-field form-application__personal__document__field _small">
+                        <label for="document-series" class="series-field">Серия</label>
+                        <input type="number" name="document-series" id="document-series">
+                </div>
+                <div class="form-field form-application__personal__document__field _small">
+                    <label for="document-number" >Номер<span class="req-indicator">*</span></label>
+                    <input  class="req"  type="number" name="document-number" id="document-number">
+                </div>
+                <div class="form-field form-application__personal__document__field _small">
+                    <label for="document-date">Дата выдачи<span class="req-indicator">*</span></label>
+                    <div class="date-wrapper">
+                        <input  class="req"  type="date" name="child-middlename" id="child-middlename">
+                    </div>
+                    <svg class="calendar-indicator" width="15px" height="15px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3 9H21M7 3V5M17 3V5M6 12H8M11 12H13M16 12H18M6 15H8M11 15H13M16 15H18M6 18H8M11 18H13M16 18H18M6.2 21H17.8C18.9201 21 19.4802 21 19.908 20.782C20.2843 20.5903 20.5903 20.2843 20.782 19.908C21 19.4802 21 18.9201 21 17.8V8.2C21 7.07989 21 6.51984 20.782 6.09202C20.5903 5.71569 20.2843 5.40973 19.908 5.21799C19.4802 5 18.9201 5 17.8 5H6.2C5.0799 5 4.51984 5 4.09202 5.21799C3.71569 5.40973 3.40973 5.71569 3.21799 6.09202C3 6.51984 3 7.07989 3 8.2V17.8C3 18.9201 3 19.4802 3.21799 19.908C3.40973 20.2843 3.71569 20.5903 4.09202 20.782C4.51984 21 5.07989 21 6.2 21Z" stroke="#000000" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <div class="form-field form-application__personal__document__field">
+                    <label for="document-place">Кем выдан<span class="req-indicator">*</span></label>
+                    <textarea  class="req"  name="document-place" id="document-place"></textarea>
+                </div>
+            </div>
+
+
+            <div class="form-field form-application__personal__accommodation registration">
+                <div class="form-field__wrapper form-application__personal__accommodation__wrapper">
+                    <div class="form-field  form-application__personal__accommodation__field">
+              
+                            <label for="personal-placereg">Адрес регистрации<span class="req-indicator">*</span></label>
+                            <textarea  class="req"  name="personal-placereg" id="personal-placereg"></textarea>
+                
+                    </div>
+                    <div class="btns-control">
+                        <button data-type="clear reg"class="btn-control btn-control_clear reg form-application__personal_btn-accommodation-clear" >Очистить</button>
+                        <button data-type="choose reg" class="btn-control btn-control_choose form-application__personal_btn-accommodation-infobook" >Выбрать из справочника</button>
+                    </div>
+                </div>
+             
+            </div>
+            <div class="form-field form-application__personal__field _small">
+                <label for="personal-accommodation ">Квартира</label>
+                <input type="number" name="personal-accommodation " id="personal-accommodation ">
+            </div>
+            <div class="form-checked-field ">
+                <input type="checkbox" name="address-checked " id="address-checked">
+                <label for="address-checked ">Адрес регистрации совпадает с почтовым адресо</label>
+            </div>
+            <div class="form-field form-application__personal__accommodation home address">
+                <div class="form-field__wrapper form-application__personal__accommodation__wrapper ">
+                    <div class="form-field  form-application__personal__accommodation__field">
+                            <label for="personal-placereg">Почтовый адрес<span class="req-indicator">*</span></label>
+                            <textarea  class="req"  name="personal-postoffice" id="personal-postoffice"></textarea>
+                    </div>
+                    <div class="btns-control">
+                         <button data-type="clear postoffice" class="btn-control btn-control_clear form-application__personal_btn-accommodation-clear" >Очистить</button>
+                         <button data-type="choose postoffice" class="btn-control btn-control_choose form-application__personal_btn-accommodation-infobook" >Выбрать из справочника</button>
+                    </div>
+                </div>
+             
+            </div>
+          
+            <div class="form-field form-application__personal__field">
+                <label for="personal-quarters ">Квартира</label>
+                <input type="text" name="personal-quarters " id="personal-quarters ">
+            </div>
+            <div class="form-field form-application__personal__field _middle">
+                <label for="personal-email ">E-mail</label>
+                <input type="email" name="personal-email " id="personal-email ">
+            </div>
+            <div class="form-field form-application__personal__field _middle">
+                <label for="personal-phone ">Телефон(ы)</label>
+                <input type="number" name="personal-phone " id="personal-phone">
+            </div> 
+        </div>
+        <div class="form-application__statement">
+            <div class="form-application__statement__title">Заявление</div>
+            <div class="form-application__statement__preheader">В соответствии с Федеральным законом от 19 мая 1995 года № 81-ФЗ «О государственных пособиях гражданам, имеющим детей» прошу назначить мне единовременное пособие при рождении ребенка</div>
+            <div class="form-application__statement__child-info">
+                <div class="form-application__statement__child-info__title">Информация о ребенке</div>
+                <div class="form-field">
+                    <label for="child-lastname">Фамилия<span class="req-indicator">*</span> </label>
+                    <input  class="req"  type="text" name="child-lastname" id="child-lastname">
+                </div>
+                <div class="form-field">
+                    <label for="child-firstname">Имя<span class="req-indicator">*</span></label>
+                    <input  class="req" type="text" name="child-firstname" id="child-firstname">
+                </div>
+                <div class="form-field">
+                    <label for="child-middlename">Отчество</label>
+                    <input type="text" name="child-middlename" id="child-middlename">
+                </div>
+                <div class="form-field _small">
+                    <label for="child-date">Дата рождения<span class="req-indicator">*</span></label>
+                    <div class="date-wrapper">
+                        <input  class="req"  type="date" name="child-middlename" id="child-middlename">
+                    </div>
+                    <svg class="calendar-indicator" width="15px" height="15px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3 9H21M7 3V5M17 3V5M6 12H8M11 12H13M16 12H18M6 15H8M11 15H13M16 15H18M6 18H8M11 18H13M16 18H18M6.2 21H17.8C18.9201 21 19.4802 21 19.908 20.782C20.2843 20.5903 20.5903 20.2843 20.782 19.908C21 19.4802 21 18.9201 21 17.8V8.2C21 7.07989 21 6.51984 20.782 6.09202C20.5903 5.71569 20.2843 5.40973 19.908 5.21799C19.4802 5 18.9201 5 17.8 5H6.2C5.0799 5 4.51984 5 4.09202 5.21799C3.71569 5.40973 3.40973 5.71569 3.21799 6.09202C3 6.51984 3 7.07989 3 8.2V17.8C3 18.9201 3 19.4802 3.21799 19.908C3.40973 20.2843 3.71569 20.5903 4.09202 20.782C4.51984 21 5.07989 21 6.2 21Z" stroke="#000000" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="form-application__statement__payments">
+                <div class="form-application__statement__payments__text">Единовременное пособие при рождении ребенка прошу перечислять через</div>
+                <div class="form-application__statement__payments__options">
+                    <span class="req-indicator options">*</span>
+                    <div class="form-application__statement__payments__options_opt1">
+                        <input class="req" checked data-value="01" type="radio" name="statement" id="statement-postofice">
+                        <label for="statement-postofice">организацию федеральной почтовой связи</label>
+                    </div>
+                    <div class="form-application__statement__payments__options_opt2">
+                        <input class="req" data-value="02" type="radio" name="statement" id="statement-credit">
+                        <label for="statement-credit">кредитную организацию</label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-field _small payment-org ">
+                <label for="postoffice-number">Номер организации <br>федеральной почтовой <br>связи<span class="req-indicator org">*</span></label>
+                <input  class="req" type="number" name="postoffice-number" id="postoffice-number">
+            </div>
+            <div class="form-application__statement__account account">
+                <div class="form-application__statement__account__title">Реквизиты моего счета</div>
+                <div class="form-field _small">
+                    <label for="account-number _middle">Номер<span class="req-indicator">*</span></label>
+                    <input class="req"  type="number" name="account-number" id="account-number">
+                </div>
+                <div class="form-field">
+                    <label for="account-number">Наименование банковской организации<span class="req-indicator">*</span></label>
+                    <input class="req"  type="text" name="account-number" id="account-number">
+                </div>
+                <div class="form-field _small">
+                    <label for="org-number">№ филиала</label>
+                    <input type="number" name="org-number" id="org-number">
+                </div>
+                <div class="form-field _middle">
+                    <label for="bik-number">БИК<span class="req-indicator">*</span></label>
+                    <input class="req"  type="number" name="bik-number" id="bik-number">
+                </div>
+                <div class="form-field _middle">
+                    <label for="inn-number">ИНН<span class="req-indicator">*</span></label>
+                    <input class="req"  type="number" name="inn-number" id="inn-number">
+                </div>
+                <div class="form-field  _middle">
+                    <label for="kpp-number">КПП<span class="req-indicator">*</span></label>
+                    <input class="req"  type="number" name="kpp-number" id="kpp-number">
+                </div>
+            </div>
+            <div class="form-application__statement__checked">
+                <div class="form-application__statement__checked_field form-checked-field  ">
+                    <span class="req-indicator payment-check">*</span>
+                    <input class="req"  type="checkbox" name="agreement1" id="agreement1">
+                    <label for="agreement1">в случае наступления обстоятельств, влекущих прекращение выплаты, обязуюсь сообщить о них в органы социальной защиты в 5 дневный срок</label>
+                </div>
+                <div class="form-checked-field form-application__statement__checked_field ">
+                    <input type="checkbox" name="agreement2" id="agreement2">
+                    <label for="agreement2">отсутствует трудовая книжка</label>
+                </div>
+            </div>
+            
+        </div>
+        <div class="form-application__documents">
+            <div class="form-application__documents__title">Прилагаемые документы</div>
+            <div class="form-application__documents__preloader">Документ, подтверждающего личность</div>
+            <label for="document-btn"  class="btn-control form-application__documents__btn-wrapper"><span class="req-indicator file">*</span>Прикрепить <input type="file" id="document-btn" class="form-application__documents__btn"></label>
+        </div>
+    </form>
+    <script defer src="./jQuery.min.js"></script>
+    <script defer src="./index.js"></script>
+</body>
+</html>
