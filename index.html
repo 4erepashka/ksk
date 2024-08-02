@@ -182,9 +182,10 @@
                     <label for="account-number _middle">Номер<span class="req-indicator">*</span></label>
                     <input class="req"  type="number" name="account-number" id="account-number">
                 </div>
-                <div class="form-field">
+                <div class="form-field _account">
                     <label for="account-number">Наименование банковской организации<span class="req-indicator">*</span></label>
                     <input class="req"  type="text" name="account-number" id="account-number">
+                    <span class="account-number-descr">(наименование банковской организации и его номер)</span>
                 </div>
                 <div class="form-field _small">
                     <label for="org-number">№ филиала</label>
@@ -221,6 +222,7 @@
             <div class="form-application__documents__preloader">Документ, подтверждающего личность</div>
             <label for="document-btn"  class="btn-control form-application__documents__btn-wrapper"><span class="req-indicator file">*</span>Прикрепить <input type="file" id="document-btn" class="form-application__documents__btn"></label>
         </div>
+        <button class="btn-control btn-control_submite" type="submit">Отправить</button>
     </form>
     <script defer src="./jQuery.min.js"></script>
     <script defer src="./index.js"></script>
